@@ -4,18 +4,17 @@ import { Inter } from 'next/font/google';
 // import styles from '@/styles/Home.module.css';
 import Link from 'next/link';
 import Layout from '@/components/Layout';
+import Showcase from '@/components/Showcase';
 
 const inter = Inter({ subsets: ['latin'] });
 
 export default function HomePage() {
   return (
     <Layout>
-      <main>
-        <h1 className={`${inter.className} text-4xl font-bold underline`}>
-          Home
-        </h1>
-        <div></div>
-      </main>
+      <Showcase />
+      <h1 className={`${inter.className} text-4xl font-bold underline`}>
+        Tra la la
+      </h1>
     </Layout>
   );
 }

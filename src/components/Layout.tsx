@@ -2,6 +2,7 @@ import Head from 'next/head';
 import React, { useMemo } from 'react';
 import Header from './Header';
 import Footer from './Footer';
+import Showcase from './Showcase';
 
 type LayoutProps = {
   title?: string;
@@ -28,6 +29,7 @@ const Layout = ({
         <link rel='icon' href='/favicon.ico' />
       </Head>
       <Header />
+      {/* <Showcase /> */}
       <div className='container mx-auto px-4'>{children}</div>
       <Footer />
     </>
