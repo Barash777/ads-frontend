@@ -7,19 +7,14 @@ import Layout from '@/components/Layout';
 
 const inter = Inter({ subsets: ['latin'] });
 
-export default function HomePageAsad() {
+export default function HomePage() {
   return (
     <Layout>
       <main>
-        <h1 className='text-4xl font-bold underline'>Home</h1>
-        <div>
-          <Link href={'/about'} className={inter.className}>
-            About
-          </Link>
-          <Link href={'/events'} className={inter.className}>
-            Events
-          </Link>
-        </div>
+        <h1 className={`${inter.className} text-4xl font-bold underline`}>
+          Home
+        </h1>
+        <div></div>
       </main>
     </Layout>
   );

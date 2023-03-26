@@ -1,5 +1,7 @@
 import Head from 'next/head';
-import React from 'react';
+import React, { useMemo } from 'react';
+import Header from './Header';
+import Footer from './Footer';
 
 type LayoutProps = {
   title?: string;
@@ -14,6 +16,8 @@ const Layout = ({
   description = 'Ads for everybody',
   children,
 }: LayoutProps) => {
+  //   const headerJSX = useMemo(() => <Header />, []);
+
   return (
     <>
       <Head>
@@ -23,7 +27,9 @@ const Layout = ({
         <meta name='viewport' content='width=device-width, initial-scale=1' />
         <link rel='icon' href='/favicon.ico' />
       </Head>
-      <div>{children}</div>
+      <Header />
+      <div className='container mx-auto px-4'>{children}</div>
+      <Footer />
     </>
   );
 };
