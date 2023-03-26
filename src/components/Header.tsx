@@ -152,24 +152,15 @@ const Header = () => {
             </Transition>
           </Popover>
 
-          <Link
-            href='/events'
-            className='text-sm font-semibold leading-6 text-gray-900 hover:underline '
-          >
+          <Link href='/events' className='link'>
             Events
           </Link>
-          <Link
-            href='/about'
-            className='text-sm font-semibold leading-6 text-gray-900 hover:underline '
-          >
+          <Link href='/about' className='link'>
             About
           </Link>
         </Popover.Group>
         <div className='hidden lg:flex lg:flex-1 lg:justify-end'>
-          <a
-            href='#'
-            className='text-sm font-semibold leading-6 text-gray-900 hover:underline '
-          >
+          <a href='#' className='link'>
             Log in <span aria-hidden='true'>&rarr;</span>
           </a>
         </div>
